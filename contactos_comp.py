@@ -79,7 +79,7 @@ def filtrar_favo(lista_contactos):
 #------------- 05- FUNCION PARA MOSTRAR CONTACTOS EVENTUALES -------------------
 
 def mostrar_eventuales(lista_contactos):
-    hay_eventuales = False
+    
 
     for contacto in lista_contactos:
          if contacto["Favorito"] == False:
@@ -88,10 +88,9 @@ def mostrar_eventuales(lista_contactos):
             print(f"Nombre: {contacto['Nombre']}")
             print(f"Celular: {contacto['Celular']}")
             print("Favorito: No")
-            hay_eventuales = True
+            
 
-         else: 
-            hay_eventuales
+    if contacto["Favorito"] == True: 
             print("No hay contactos eventuales.")
 
 #-----------------06- FUNCION PARA AGREGAR FAVORITO ----------------------------
