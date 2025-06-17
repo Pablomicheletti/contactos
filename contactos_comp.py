@@ -70,7 +70,7 @@ def filtrar_favo(lista_contactos):
                 print(f"Código: {contacto['código']}")
                 print(f"Nombre: {contacto['Nombre']}")
                 print(f"Celular: {contacto['Celular']}")
-                print(f"Favorito: {'Sí' if contacto["Favorito"] else 'No'}")
+                print(f"Favorito: {'Sí' if contacto['Favorito'] else 'No'}")
                 print("-" * 20)
 
 
