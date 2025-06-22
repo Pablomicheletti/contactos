@@ -60,19 +60,18 @@ def filtrar_contacto(lista_contactos):
 
 #---------------04- FUNCION FILTRAR FAVORITO--------------------------------
 
-def filtrar_favo(lista_contactos):
+def filtrar_favorito(lista_contactos):
         print(" Contactos Favoritos:")
-        favoritos = [c for c in lista_contactos if c.get("Favorito")]
+        favoritos = [c for c in lista_contactos if c.get('Favorito')]
         if not favoritos:
-            print("No hay contactos favoritos.")
+         print("No hay contactos favoritos.")
         else:
-            for contacto in favoritos:
-                print(f"Código: {contacto['código']}")
-                print(f"Nombre: {contacto['Nombre']}")
-                print(f"Celular: {contacto['Celular']}")
-                print(f"Favorito: {'Sí' if contacto['Favorito'] else 'No'}")
-                print("-" * 20)
-
+                for contacto in favoritos:
+                    print(f"Código: {contacto['código']}")
+                    print(f"Nombre: {contacto['Nombre']}")
+                    print(f"Celular: {contacto['Celular']}")
+                    print(f"Favorito: {'Sí' if contacto['Favorito'] else 'No'}")
+                    print("-" * 20)
 
 
 
@@ -202,12 +201,7 @@ while True:
     #TODOS 
            
     elif opcion==4:
-         filtrar_favo(lista_contactos)
-       
-
-
-
-
+         filtrar_favorito(lista_contactos)
         #Alumno 2
         #Se debe mostrar sólo los contactos favoritos
         #Se sugiere investigar alguna forma atractiva de mostrar los datos
